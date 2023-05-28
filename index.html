@@ -1,1 +1,417 @@
-"test" 
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Home - FlaCrow</title>
+    <style>
+        div .left_side {
+            animation-name: left_side;
+            animation-duration: 1s;
+        }
+
+        div .right_side {
+            animation-name: right_side;
+            animation-duration: 1s;
+        }
+
+        @keyframes left_side {
+            from {
+
+                left: -1200px;
+                opacity: 0
+            }
+
+            to {
+
+                left: 0px;
+                opacity: 1;
+            }
+        }
+
+        @keyframes right_side {
+            from {
+
+                left: 1200px;
+                opacity: 0
+            }
+
+            to {
+
+                left: 0px;
+                opacity: 1;
+            }
+        }
+    </style>
+    <script type="application/javascript" src="https://unpkg.com/react@16.0.0/umd/react.production.min.js"></script>
+    <script type="application/javascript"
+        src="https://unpkg.com/react-dom@16.0.0/umd/react-dom.production.min.js"></script>
+    <script type="application/javascript" src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="application/javascript" src="https://unpkg.com/whatwg-fetch@3.0.0/dist/fetch.umd.js"></script>
+</head>
+
+<body>
+
+    <div id="root"></div>
+    <script type="text/jsx" src="./js/index.jsx"></script>
+
+    <div class="container">
+        <div class="left_side">
+            <div class="langWrap">
+                <a language='en'>EN</a>
+                <a language='by'>BY</a>
+                <a language='ru'>RU</a>
+            </div>
+            <div class="profileText">
+                <div class="imgBx">
+                    <img src="./images/img.jpg">
+                </div>
+                <h2>Maksim Yaroshyk<br><span>Android Developer</span></h2>
+            </div>
+
+
+
+            <div class="contact_info">
+                <h3 class="title">Contact Info</h3>
+                <ul>
+                    <li>
+                        <a href="mailto:admin@flacrow.dev">
+                            <span class="icon"><i class="far fa-envelope"></i></span>
+                            <span class="text">admin@flacrow.dev</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.flacrow.dev">
+                            <span class="icon"><i class="fa fa-globe"></i></span>
+                            <span class="text">flacrow.dev</span></a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/flamelcrowley">
+                            <span class="icon"><i class="fab fa-telegram"></i></span>
+                            <span class="text">flamelcrowley</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/maksim-yaroshyk/">
+                            <span class="icon"><i class="fa-brands fa-linkedin"></i></span>
+                            <span class="text">maksim-yaroshyk</span></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/FlaCrow/">
+                            <span class="icon"><i class="fa-brands fa-github"></i></span>
+                            <span class="text">FlaCrow</span></a>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+                        <span class="text">Belarus, Brest</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contact_info education">
+                <h3 class="title">Education</h3>
+                <ul>
+                    <li>
+                        <h5>2016 - 2020</h5>
+                        <h4>Bachelor's Degree</h4>
+                        <h4>Brest State Technical University</h4>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="contact_info lang">
+                <h3 class="title">languages</h3>
+                <ul>
+                    <li>
+                        <h4>English</h4>
+                        <h4>Upper Intermediate</h4>
+
+                    </li>
+                    <li>
+                        <h4>Belarusian</h4>
+                        <h4>Native</h4>
+
+                    </li>
+                    <li>
+                        <h4>Russian</h4>
+                        <h4>Native</h4>
+
+                    </li>
+                    <li>
+                        <h4>Japanese</h4>
+                        <h4>JLPT N2</h4>
+                    </li>
+                </ul>
+            </div>
+
+
+
+        </div>
+
+
+
+
+        <div class="right_side">
+            <div class="pdf_down">
+                <span class="downHoverText">Download as PDF</span>
+                <a href="Yaroshyk_cv_en.pdf"><i class="fa-solid fa-download"></i></a>
+            </div>
+            <div class="about">
+                <h2 class="title2">Objective Statement</h2>
+                <p>
+
+                    Android Developer with a passion for developing innovative mobile applications.
+                    <br><br>Highly motivated to learn new technologies and develop creative solutions to complex
+                    problems.
+                    Possess a strong understanding of the Android SDK, Kotlin, Java, as well as experience with popular
+                    libraries such as Retrofit, Dagger2, etc. Experienced in developing user interfaces using XML
+                    layouts and custom views. <br><br>Able to work independently or collaboratively in a team
+                    environment.
+                </p>
+            </div>
+            <div class="about projects">
+                <h2 class="title2">Projects</h2>
+                <div class="box">
+                    <div class="latest_commit">
+                        <h5>Latest Commit:</h5>
+                        <h5>No Information</h5>
+                    </div>
+                    <div class="text">
+                        <a href="https://github.com/FlaCrow/ShowTracker">
+                            <h4><i class="fa-brands fa-github"></i>ShowTracker</h4>
+                        </a>
+                        <p>
+                            Simple app to manage TV shows and movies watch history powered by TMDb
+                            services.
+                            <br>
+                            <br>
+                            <b>Features:</b>
+                            <br>
+                        <ul>
+                            <li>Discover trending movies and TV series</li>
+                            <li>Look up detailed information</li>
+                            <li>Sort shows into 3 different categories</li>
+                            <li>Export and import watch history</li>
+                            <li>Notifications for new episodes</li>
+                            <li>More things to come in future updates</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="about skills">
+                <h2 class="title2">Professional Skills</h2>
+                <div class="text">
+                    <div class="text">
+                        <ul>
+                            <li>
+                                Kotlin, Java
+                            </li>
+                            <li>
+                                Android SDK
+                            </li>
+                            <li>
+                                Dependency Injection (Dagger2)
+                            </li>
+                            <li>
+                                Rest API, Retrofit, Glide, Picasso
+                            </li>
+                            <li>
+                                Kotlin Coroutines, RxJava
+                            </li>
+                            <li>
+                                Custom Views
+                            </li>
+                            <li>
+                                Android Jetpack (Navigation, Paging, Room, etc.)
+                            </li>
+                            <li>
+                                MVVM, Clean Architecture
+                            </li>
+                            <li>
+                                Gradle, Maven, CMake
+                            </li>
+                            <li>
+                                git
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="about interest">
+                <h2 class="title2">Interests</h2>
+                <ul>
+                    <li><i class="fas fa-computer"></i>Tech</li>
+                    <li><i class="fas fa-gamepad"></i>Gaming</li>
+                    <li><i class="fas fa-music"></i>Music</li>
+                    <li><i class="fas fa-palette"></i>Sketch</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <script>
+
+            const langSwEl = document.querySelector('.langWrap');
+            const link = document.querySelectorAll('.langWrap a');
+            const nameEl = document.querySelector('.profileText h2');
+            const contInfoTitle = document.querySelector('.contact_info h3');
+            const langElTitle = document.querySelector('.contact_info.lang h3');
+            const edTitle = document.querySelector(".contact_info.education h3")
+            const edUnivNameTitle = document.querySelectorAll('.contact_info.education h4');
+            const langElList = document.querySelectorAll('.contact_info.lang h4');
+            const profileTitle = document.querySelector('.about h2');
+            const profileText = document.querySelector('.about p');
+            const elProjectsTitle = document.querySelector('.about.projects h2');
+            const elProjectsLatestCommit = document.querySelectorAll('.about.projects h5');
+            const skillTitle = document.querySelector('.about.skills h2');
+            const interestsTitle = document.querySelector('.about.interest h2');
+            const interestsList = document.querySelectorAll('.about.interest li');
+            const pdfDownBut = document.querySelector('.pdf_down span')
+            const pdfHref = document.querySelector('.pdf_down a')
+            const params = new Proxy(new URLSearchParams(window.location.search), { get: (searchParams, prop) => searchParams.get(prop), });
+
+            link.forEach(el => {
+                el.addEventListener('click', () => {
+                    langSwEl.querySelector('.active').classList.remove('active');
+                    el.classList.add('active');
+                    const attr = el.getAttribute('language');
+                    history
+                    history.replaceState("", "", `?lang=${attr}`)
+                    nameEl.innerHTML = data[attr].name
+                    contInfoTitle.textContent = data[attr].contInfoTitle
+                    langElTitle.textContent = data[attr].langElTitle
+                    profileTitle.textContent = data[attr].profileTitle
+                    profileText.innerHTML = data[attr].profileText
+                    edTitle.textContent = data[attr].edTitle
+                    elProjectsTitle.textContent = data[attr].elProjectsTitle
+                    elProjectsLatestCommit[0].textContent = data[attr].elProjectsLatestCommit
+                    edUnivNameTitle[1].textContent = data[attr].edUnivName
+                    edUnivNameTitle[0].textContent = data[attr].edUnivTitle
+                    skillTitle.textContent = data[attr].skillTitle
+                    interestsTitle.textContent = data[attr].interestsTitle
+                    interestsList[0].innerHTML = data[attr].interestTech
+                    interestsList[1].innerHTML = data[attr].interestGaming
+                    interestsList[2].innerHTML = data[attr].interestMusic
+                    interestsList[3].innerHTML = data[attr].interestSketch
+                    pdfDownBut.textContent = data[attr].downButText
+                    pdfHref.href = data[attr].pdfHref
+                });
+            });
+
+
+
+
+
+
+
+
+            var data = {
+                "en": {
+                    "name": "Maksim Yaroshyk<br><span>Android Developer</span>",
+                    "contInfoTitle": "Contact Info",
+                    "langElTitle": "languages",
+                    "profileTitle": "Objective Statement",
+                    "elProjectsTitle": "Projects",
+                    "elProjectsLatestCommit": "Latest Commit:",
+                    "profileText": "Android Developer with a passion for developing innovative mobile applications.<br><br>Highly motivated to learn new technologies and develop creative solutions to complex problems. Possess a strong understanding of the Android SDK, Kotlin, Java, as well as experience with popular libraries such as Retrofit, Dagger2, etc. Experienced in developing user interfaces using XML layouts and custom views.<br><br>Able to work independently or collaboratively in a team environment.",
+                    "edTitle": "Education",
+                    "edUnivName": "Brest State Technical University",
+                    "edUnivYear": "2016-2020",
+                    "edUnivMisc": "Computer Engineering",
+                    "edUnivTitle": "Bachelor's Degree",
+                    "skillTitle": "Professional Skills",
+                    "interestsTitle": "Interests",
+                    "interestTech": '<i class="fas fa-computer"></i>Tech',
+                    "interestGaming": '<i class="fas fa-gamepad"></i>Gaming',
+                    "interestMusic": '<i class="fas fa-music"></i>Music',
+                    "interestSketch": '<i class="fas fa-palette"></i>Sketch',
+                    "downButText": "Download as PDF",
+                    "pdfHref": "Yaroshyk_cv_en.pdf"
+                },
+                "by": {
+                    "name": "Ярошык Максім<br><span>Android Developer</span>",
+                    "contInfoTitle": "Кантактная інфармацыя",
+                    "langElTitle": "Мовы",
+                    "profileTitle": "Профіль",
+                    "elProjectsTitle": "Праекты",
+                    "elProjectsLatestCommit": "Апошні Каміт:",
+                    "profileText": "Мэтанакіраваны і працавіты Android Developer, які шукае магчымасьць ўжываць ды пашыраць свае веды на практыцы.<br><br>Добра ведаю Android SDK, Kotlin, Java, таксама магу працаваць зь вядомымі бібліятэкамі і фрэймворкамі, такімі як Retrofit, Dagger2, Android Jetpack. Магу распрацовываць UI экраны, карыстаючы XML і Custom Views.<br><br>Лёгка адаптуюсь, здольны працаваць у камандзе зь іншымі людзьмі",
+                    "edTitle": "Адукацыя",
+                    "edUnivName": "Брэсцкі Дзяржаўны Тэхнічны Ўніверсітэт",
+                    "edUnivYear": "2016-2020",
+                    "edUnivMisc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt, augue vel pretium tristique, odio nulla consequat libero, a sagittis orci sem non tortor. Donec mollis mauris nisl, eu ",
+                    "edUnivTitle": "Ступень Бакалаўра",
+                    "skillTitle": "Прафесійныя Навыкі",
+                    "interestsTitle": "Хобі",
+                    "interestTech": '<i class="fas fa-computer"></i>Тэхналёгіі',
+                    "interestGaming": '<i class="fas fa-gamepad"></i>Геймінг',
+                    "interestMusic": '<i class="fas fa-music"></i>Музыка',
+                    "interestSketch": '<i class="fas fa-palette"></i>Маляваньне',
+                    "downButText": "Спампаваць PDF",
+                    "pdfHref": "Yaroshyk_cv_by.pdf"
+
+                },
+                "ru": {
+                    "name": "Ярошик Максим<br><span>Android Developer</span>",
+                    "contInfoTitle": "Контактная Информация",
+                    "langElTitle": "Языки",
+                    "profileTitle": "Профиль",
+                    "elProjectsTitle": "Проекты",
+                    "elProjectsLatestCommit": "Последний Коммит:",
+                    "profileText": "Целеустремленный и трудолюбивый Android Developer, ищущий новые вызовы и возможности для развития.<br><br>Обладаю хорошими знаниями Android SDK, Kotlin, Java, также умею работать с популярными библиотеками и фреймворками, такими как Retrofit, Dagger2, Android Jetpack. Имею опыт работы в учебных проектах, могу разрабатывать экраны UI, используя XML и Custom Views.<br><br>Легко адаптируюсь, способен работать в команде и сотрудничать с другими людьми для достижения общих целей.",
+                    "edTitle": "Образование",
+                    "edUnivName": "Брестский Государственный Технический университет",
+                    "edUnivYear": "2016-2020",
+                    "edUnivMisc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt, augue vel pretium tristique, odio nulla consequat libero, a sagittis orci sem non tortor. Donec mollis mauris nisl, eu ",
+                    "edUnivTitle": "Степень Бакалавра",
+                    "skillTitle": "Профессиональные Навыки",
+                    "interestsTitle": "Хобби",
+                    "interestTech": '<i class="fas fa-computer"></i>Технологии',
+                    "interestGaming": '<i class="fas fa-gamepad"></i>Гейминг',
+                    "interestMusic": '<i class="fas fa-music"></i>Музыка',
+                    "interestSketch": '<i class="fas fa-palette"></i>Рисование',
+                    "downButText": "Скачать PDF",
+                    "pdfHref": "Yaroshyk_cv_ru.pdf"
+                }
+                // "jp": {
+                //     "name": "Maksim Yaroshyk<br><span>Android Developer</span>"
+                // }
+            }
+
+
+            let langQuery = params.lang;
+            let langNamesIncludesCorrectData = Object.getOwnPropertyNames(data).map(x => x == langQuery);
+
+
+            if (langQuery == null || !langNamesIncludesCorrectData.includes(true)) {
+                link.forEach(el => {
+                    if (el.getAttribute('language') == "en") {
+                        el.classList.add('active');
+                        // history.pushState("en", "", `?lang=en`);
+                    }
+                })
+            }
+
+
+            else
+                link.forEach(el => {
+                    if (el.getAttribute('language') == langQuery) {
+                        el.classList.add('active');
+                        // history.pushState(langQuery, "", `?lang=${langQuery}`);
+                        history.replaceState("", "", `?lang=${langQuery}`)
+                        el.click();
+                    }
+                });
+
+
+
+
+        </script>
+
+</body>
+
+</html>
